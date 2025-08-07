@@ -158,7 +158,7 @@
     width: 100%;
     padding: 7px 15px;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-radius: 11px;
     font-size: 0.95rem;
     background-color: #f9f9f9;
     transition: all 0.3s ease;
@@ -181,7 +181,7 @@
 
 .contato textarea {
     resize: vertical;
-    min-height: 50px;
+    min-height: 10px;
 }
 .submitBotao{
     background-color: #1351d8;
@@ -191,9 +191,7 @@
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.5s ease;
-    margin-top: 10px;
-    display: flex;
+    transition: all 0.5s ease;  
     justify-content: center;
     align-items: center;
 
@@ -212,5 +210,41 @@
         width: 100%;
         max-width: 100%;
         padding: 0;
+    }
+}
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    header nav ul{
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    footer{
+        flex-direction: row;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .redes-sociais p{
+        display: none;
+    }
+
+    .redes-sociais img,
+    .logo_footer img{
+        height: 25px;
+    }
+
+    .copyright p{
+        font-size: 8px;
+        line-height: 1.4;
+        max-width: 88%;
+        margin: 0 auto;
     }
 }

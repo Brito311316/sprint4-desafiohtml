@@ -35,8 +35,6 @@
   }
   .img {
    max-width: 100%;
-   height: auto;
-   margin-bottom: 20px;
   }
  
   .logo {
@@ -58,17 +56,16 @@
   main {
   flex: 1;
   padding: 20px;
- text-align: center;
   }
+
  .lancamento {
-   text-align: center;
+  text-align: center;
  } 
   
  .lancamento img {
- width: 85%;
- margin: 20px 0;
- 
+ width: 91%; 
   }
+
  
   footer {
   margin-top: 20px;
@@ -103,8 +100,6 @@
    flex-direction: column;
    align-items: center;
   }
-  
-  }
   main .imagemPrincipal img{
     width: 70%;
   }
@@ -113,8 +108,46 @@
     max-width: 600px;
     padding: 0 20px;
   }
+  }
+  
   @media (max-width: 768px){
     main p{
       font-size: 14px;
     }
   }
+  
+@media (max-width: 768px){
+
+  header{
+      flex-direction: column;
+      padding: 10px 20px;
+  }
+
+  header nav ul{
+      gap: 15px;
+      margin-top: 15px;
+  }
+
+  footer{
+      flex-direction: row;
+      gap: 15px;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .redes-sociais p{
+      display: none;
+  }
+
+  .redes-sociais img,
+  .logo_footer img{
+      height: 25px;
+  }
+
+  .copyright p{
+      font-size: 8px;
+      line-height: 1.4;
+      max-width: 88%;
+      margin: 0 auto;
+  }
+}
