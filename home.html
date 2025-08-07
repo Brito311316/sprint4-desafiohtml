@@ -4,54 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>ford Enter</title>
-        <link rel="stylesheet" href="sprint4.css">
+        <link rel="stylesheet" href="home.css">
     </head>
     <body>
-        
+      <div class="container">  
         <header>
-            <img src="/img/logo-ford-256.png" alt="Logo-Ford" />
-                       
-            <nav class="menu">
+            <img src="/img/logo-ford-256.png" alt="Logo-Ford" class="logo" />                      
+            <nav>
                 <ul>
-
-                    <li><a href="/home.html">home</a></li>
-                    <li><a href="/lancamento.html">lançamento</a></li>
-                    <li><a href="/contato.html">contato</a></li>
-
+                    <a href="/home.html">Home</a>
+                    <a href="/lancamento.html">Lançamento</a>
+                    <a href="/contato.html">Contato</a>
                 </ul>
             </nav>
-
+            <div></div>
         </header>
 
         <main>
-            <div class="imagemPrincipal">              
-                <img src="img/imagem_1.jpg" alt="Ranger">
-            </div>  
-            <p> lançamento da Ranger 2025. <a href="img/xls 2.2 diesel.jpg">click aqui</a></p>
-        </main>
-        <script>
-            const toggle = document.querySelector(".menu-toggle");
-            const menu = document.querySelector(".menu ul");
+            <section class="lancamento">                             
+                <img src="/img/imagem_1.jpg" alt="Ranger">
+            <p> O novo Ford Ranger 2022 traz inovação, tecnologia, e design moderno. Um carro pensado para o futuro, com potência, economia e conectividade. <a href="img/xls 2.2 diesel.jpg">click aqui</a></p>
+            </section>
 
-            toggle.addEventListener("click", () => {
-                menu.classList.toggle("active");
-            });
+        </main>       
 
-        </script>
-
-        <footer>
-            <div class="redesSociais">
-              <a href="#"><img src="/img/facebook-50.png" alt="Facebook"></a>
-              <a href="#"><img src="/img/instagram-logo-50.png" alt="Instagram"></a>
-              <a href="#"><img src="/img/youtube-squared-50.png" alt="Youtube"></a>
-            </div>
-            <div class="copyright">
-              <p>&copy; 2025 Ford Motor Company todos os direitos reservados</p>
-            </div>
-            <div class="logo_footer">
-              <img src="/img/ford-96.png" alt="Logo footer">
-            </div>
-        </footer>
-    
+         <footer>            
+            <ul class="redes-sociais">
+                <li><a href="https://facebook.com/ford"><img src="/img/facebook-50.png" alt="Facebook"></a></li>
+                <li><a href="https://Instagram.com/ford"><img src="/img/instagram-logo-50.png" alt="Instagram"></a></li>
+                <li><a href="https://www.youtube.com/@fordbrasil"><img src="/img/youtube-squared-50.png" alt="Youtube"></a></li>
+            </ul> 
+             <p>&copy; 2025 Ford Motor Company todos os direitos reservados</p>
+             <img src="/img/ford-96.png">                
+             
+         </footer>
+      </div>
     </body>
 </html>        
